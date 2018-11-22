@@ -15,11 +15,11 @@ spec:
           name: redis
           protocol: TCP
     - name: python
-      image: janakiramm/py-red
+      image: python:3.7.1
       env:       
         - name: "REDIS_HOST"
           value: "localhost"
       ports:
         - containerPort: 5000
           name: http
-protocol: TCP 
+          protocol: TCP 
